@@ -1,125 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Text Example</title>
-  <style>
-    /* Set the background color to salmon pink */
-    body {
-      background-color: #FF91A4; /* Salmon pink color */
-      font-family: Arial, sans-serif;
-      color: #333; /* Default text color */
-      margin: 0;
-      padding: 0;
-    }
+/* Set the whole page background to salmon */
+body {
+  background-color: #FF91A4; /* Salmon color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
-    }
+/* Styling for the navbar */
+.navbar {
+  background-color: #FF6347; /* Tomato color for the navbar */
+  overflow: hidden;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+.navbar button {
+  background-color: #FF6347; /* Same color as navbar */
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 15px;
-    }
+.navbar button:hover {
+  background-color: #FF91A4; /* Change to salmon on hover */
+  color: black;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s;
-    }
+/* Styling for pages */
+section {
+  display: none; /* Hide all sections by default */
+  padding: 20px;
+}
 
-    .nav-links a:hover {
-      color: #00bcd4;
-    }
+section.active {
+  display: block; /* Show only the active section */
+}
 
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-    }
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: #333;
+}
 
-    .hamburger span {
-      height: 3px;
-      width: 25px;
-      background-color: white;
-      border-radius: 5px;
-    }
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
 
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #444;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border-radius: 5px;
-        padding: 10px;
-      }
+.image-container {
+  text-align: center;
+  margin-top: 30px;
+}
 
-      .nav-links.show {
-        display: flex;
-      }
+.image-container img {
+  width: 40%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+}
 
-      .hamburger {
-        display: flex;
-      }
-    }
-
-    /* Image container styles */
-    .image-container img {
-      width: 90%;     /* Shrink the image to 90% of the container's width */
-      height: auto;   /* Maintain aspect ratio */
-    }
-
-    /* Change text color to yellow */
-    p, h1, h2, h3, h4, h5, h6 {
-      color: yellow;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="navbar">
-    <div class="logo">My Website</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-
-  <div class="image-container">
-    <img src="https://example.com/fish-image.jpg" alt="Fish">
-  </div>
-
-  <script>
-    // JavaScript to toggle the hamburger menu on mobile devices
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('show');
-    }
-  </script>
-
-</body>
-</html>
