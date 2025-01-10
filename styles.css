@@ -31,3 +31,17 @@ body {
   background-color: #FF6347; /* Tomato color on hover */
   border-radius: 5px; /* Rounded corners on hover */
 }
+
+/* Image container styling */
+.image-container {
+  text-align: center;
+  margin-top: 30px; /* Adds some space between the image and other content */
+}
+
+/* Image resizing to 40% */
+.image-container img {
+  width: 40%;  /* Shrinks the image to 40% of its original size */
+  height: auto; /* Keeps the aspect ratio intact */
+  max-width: 400px; /* Limits the maximum width */
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
