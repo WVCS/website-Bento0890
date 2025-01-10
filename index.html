@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combined Salmon-Themed Pages</title>
+  <title>Salmon Themed Pages</title>
   <style>
     /* Set the whole page background to salmon */
     body {
@@ -75,66 +75,126 @@
       max-width: 400px; /* Limits the maximum width */
       border-radius: 10px; /* Optional: adds rounded corners to the image */
     }
-
-    /* Hide sections by default */
-    .hidden {
-      display: none;
-    }
   </style>
-  <script>
-    // Function to toggle visibility of pages
-    function showPage(pageId) {
-      const sections = document.querySelectorAll("section");
-      sections.forEach(section => section.classList.add("hidden"));
-      document.getElementById(pageId).classList.remove("hidden");
-    }
-  </script>
 </head>
 <body>
 
-  <!-- Navbar with buttons to toggle pages -->
+  <!-- Navbar with links to separate pages -->
   <div class="navbar">
-    <button onclick="showPage('first-page')">First Page</button>
-    <button onclick="showPage('second-page')">Second Page</button>
+    <a href="first-page.html">First Page</a>
+    <a href="second-page.html">Second Page</a>
   </div>
 
-  <!-- First Page Section -->
-  <section id="first-page">
-    <h1>WELCOME TO MY WEBSITE</h1>
-    <p>This page has great things!</p>
+</body>
+</html>
 
-    <div class="image-container">
-      <img src="https://cdn11.bigcommerce.com/s-oue5ssemhp/images/stencil/original/products/201/903/pygmycory_zps8b3c301a__35857.1500684481.jpg?c=2" alt="Pygmy Corydoras Fish">
-    </div>
+<!-- First Page File: first-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Page</title>
+  <style>
+    body {
+      background-color: #FF91A4;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-    <center>
-      <!-- Embed first iframe -->
-      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/FdCQXIo510gJ5kvMbF5EXW6Yj5zw7cYy5_g0PBOy6_x/embed?nosource"></iframe>  
-      <br>
-      <!-- Embed second iframe -->
-      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-Cn71Ik4K1HbquSXSwCs2KZ4N0bNj4Ksy6YqsQos7uw/embed?nosource"></iframe>  
-      <br>
-      <!-- Embed YouTube video -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/zYQ3vOZLsh4?si=URbQpIFdECimSvLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
-    </center>
-  </section>
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+    }
 
-  <!-- Second Page Section -->
-  <section id="second-page" class="hidden">
-    <h1>Welcome to the Second Page</h1>
-    <p>This page also has a salmon-colored background with cool things!</p>
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
 
-    <div class="image-container">
-      <img src="https://i.redd.it/nmhrt1glwde51.jpg" alt="Fish Image">  
-      <p>This is pretty great, isn't it, Mr. Salmon?</p>
-    </div>
+    .image-container {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-    <center>
-      <!-- Embed Spotify iframe -->
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5VBjyOQzqlPNgdRPMM6prF?utm_source=generator" 
-              width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </center>
-  </section>
+    .image-container img {
+      width: 40%;
+      height: auto;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>WELCOME TO MY WEBSITE</h1>
+  <p>This page has great things!</p>
+  <div class="image-container">
+    <img src="https://cdn11.bigcommerce.com/s-oue5ssemhp/images/stencil/original/products/201/903/pygmycory_zps8b3c301a__35857.1500684481.jpg?c=2" alt="Pygmy Corydoras Fish">
+  </div>
+  <center>
+    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/FdCQXIo510gJ5kvMbF5EXW6Yj5zw7cYy5_g0PBOy6_x/embed?nosource"></iframe>
+    <br>
+    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-Cn71Ik4K1HbquSXSwCs2KZ4N0bNj4Ksy6YqsQos7uw/embed?nosource"></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zYQ3vOZLsh4?si=URbQpIFdECimSvLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </center>
+</body>
+</html>
 
+<!-- Second Page File: second-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Page</title>
+  <style>
+    body {
+      background-color: #FF91A4;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .image-container img {
+      width: 40%;
+      height: auto;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Second Page</h1>
+  <p>This page also has a salmon-colored background with cool things!</p>
+  <div class="image-container">
+    <img src="https://i.redd.it/nmhrt1glwde51.jpg" alt="Fish Image">  
+    <p>This is pretty great, isn't it, Mr. Salmon?</p>
+  </div>
+  <center>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5VBjyOQzqlPNgdRPMM6prF?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </center>
 </body>
 </html>
