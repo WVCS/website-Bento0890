@@ -75,14 +75,27 @@
       max-width: 400px; /* Limits the maximum width */
       border-radius: 10px; /* Optional: adds rounded corners to the image */
     }
+
+    /* Hide sections by default */
+    .hidden {
+      display: none;
+    }
   </style>
+  <script>
+    // Function to toggle visibility of pages
+    function showPage(pageId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => section.classList.add("hidden"));
+      document.getElementById(pageId).classList.remove("hidden");
+    }
+  </script>
 </head>
 <body>
 
-  <!-- Navbar with internal links -->
+  <!-- Navbar with buttons to toggle pages -->
   <div class="navbar">
-    <a href="#first-page">First Page</a>
-    <a href="#second-page">Second Page</a>
+    <button onclick="showPage('first-page')">First Page</button>
+    <button onclick="showPage('second-page')">Second Page</button>
   </div>
 
   <!-- First Page Section -->
@@ -107,7 +120,7 @@
   </section>
 
   <!-- Second Page Section -->
-  <section id="second-page">
+  <section id="second-page" class="hidden">
     <h1>Welcome to the Second Page</h1>
     <p>This page also has a salmon-colored background with cool things!</p>
 
