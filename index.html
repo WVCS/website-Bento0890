@@ -1,11 +1,9 @@
-<!DOCTYPE html> 
-<head> <link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navb with Salmon Color</title>
+  <title>My Website with Two Pages</title>
   <style>
     /* Set the whole page background to salmon */
     body {
@@ -74,35 +72,78 @@
       max-width: 400px; /* Limits the maximum width */
       border-radius: 10px; /* Optional: adds rounded corners to the image */
     }
+
+    /* Optional: Hide the second page content by default */
+    .second-page {
+      display: none;
+    }
   </style>
+  <script>
+    // Function to switch between pages
+    function switchPage(page) {
+      // Hide all pages
+      document.querySelector('.first-page').style.display = 'none';
+      document.querySelector('.second-page').style.display = 'none';
+      
+      // Show the selected page
+      document.querySelector(`.${page}`).style.display = 'block';
+    }
+  </script>
 </head>
 <body>
 
   <div class="navbar">
-    <a href="https://codepen.io/Efren-Dela-Pena/pen/gbYmypR" target="_blank">SEE NEXT PAGE</a>
+    <a href="javascript:void(0);" onclick="switchPage('first-page')">First Page</a>
+    <a href="javascript:void(0);" onclick="switchPage('second-page')">Second Page</a>
   </div>
 
-  <h1>WELCOME TO MY WEBSITE</h1>
-  <p>This page has great things!</p>
+  <!-- First Page Content -->
+  <div class="first-page">
+    <h1>Welcome to the First Page</h1>
+    <p>This page has great things!</p>
 
-  <!-- Image container with the pygmy corydoras image -->
-  <div class="image-container">
-    <img src="https://cdn11.bigcommerce.com/s-oue5ssemhp/images/stencil/original/products/201/903/pygmycory_zps8b3c301a__35857.1500684481.jpg?c=2" alt="Pygmy Corydoras Fish">
+    <!-- Image container with the pygmy corydoras image -->
+    <div class="image-container">
+      <img src="https://cdn11.bigcommerce.com/s-oue5ssemhp/images/stencil/original/products/201/903/pygmycory_zps8b3c301a__35857.1500684481.jpg?c=2" alt="Pygmy Corydoras Fish">
+    </div>
+
+    <br>
+    <center>
+      <!-- Embed first iframe -->
+      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/FdCQXIo510gJ5kvMbF5EXW6Yj5zw7cYy5_g0PBOy6_x/embed?nosource"></iframe>  
+      <br>
+      <!-- Embed second iframe -->
+      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-Cn71Ik4K1HbquSXSwCs2KZ4N0bNj4Ksy6YqsQos7uw/embed?nosource"></iframe>  
+      <br>
+      <!-- Embed YouTube video -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zYQ3vOZLsh4?si=URbQpIFdECimSvLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+    </center>
   </div>
 
-  <br>
-  <center>
-    <!-- Embed first iframe -->
-    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/FdCQXIo510gJ5kvMbF5EXW6Yj5zw7cYy5_g0PBOy6_x/embed?nosource"></iframe>  
+  <!-- Second Page Content -->
+  <div class="second-page">
+    <h1>Welcome to the Second Page</h1>
+    <p>This page also has a salmon-colored background with cool things!</p>
+
+    <!-- Image container with the fish image -->
+    <div class="image-container">
+      <img src="https://i.redd.it/nmhrt1glwde51.jpg" alt="Fish Image">  
+      <center>
+        <p>This is pretty great, isn't it mr salmon?</p>
+      </center>
+    </div>
+
     <br>
-    <!-- Embed second iframe -->
-    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-Cn71Ik4K1HbquSXSwCs2KZ4N0bNj4Ksy6YqsQos7uw/embed?nosource"></iframe>  
-    <br>
-    <!-- Embed YouTube video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zYQ3vOZLsh4?si=URbQpIFdECimSvLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
-  </center>
+    <center>
+      <!-- Embed Spotify iframe -->
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5VBjyOQzqlPNgdRPMM6prF?utm_source=generator" 
+              width="50%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <br>
+    </center>
+  </div>
 
 </body>
 </html>
+
 
 
