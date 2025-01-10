@@ -1,1 +1,24 @@
+body {
+  background-color: #FF91A4; /* Salmon color */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
 
