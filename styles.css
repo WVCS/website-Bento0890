@@ -1,24 +1,33 @@
+/* Set the background color and text styles for the page */
 body {
   background-color: #FF91A4; /* Salmon color */
   font-family: 'Arial', sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Navbar styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  background-color: #333; /* Dark background for the toolbar */
+  padding: 15px;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-}
-
-h1 {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect for links in the navbar */
+.navbar a:hover {
+  background-color: #FF6347; /* Tomato color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
